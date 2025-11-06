@@ -1,0 +1,35 @@
+/*2 – Soma dos Números de 1 a n
+
+O usuário digita um número n, e o programa calcula a soma de todos os números 
+de 1 até n.
+
+Saída esperada (se o usuário digitar 5):
+ 
+A soma de 1 ate 5 e: 15
+(Cálculo: 1 + 2 + 3 + 4 + 5 = 15)
+
+*/
+#include <stdio.h>
+
+int main(){
+	int n, soma = 0 ; 
+	
+	printf("Digite um numero para descobrir a soma do numero 1 ate o numero escohido\n");
+	scanf("%d", &n);
+	printf("Calculo: ");
+	for (int i = 1; i<=n; i++){
+		printf("%d", i);
+		soma += i; 
+		if (i<n){
+			printf(" + ");
+		}
+	
+	}
+	
+	
+	printf(" = %d", soma);
+	
+	
+	
+	return 0;
+}
